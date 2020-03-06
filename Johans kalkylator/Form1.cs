@@ -5,6 +5,7 @@ namespace Johans_kalkylator
     public partial class Form1 : Form
     {
 
+        //Hej Github
         int första;
         int andra;
         bool haskomma;
