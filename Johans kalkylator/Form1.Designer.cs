@@ -79,7 +79,7 @@
             this.button16.TabIndex = 1;
             this.button16.Text = ",";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.Button_Listener);
+            this.button16.Click += new System.EventHandler(this.Button_Komma);
             // 
             // button17
             // 

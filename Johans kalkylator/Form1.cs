@@ -6,13 +6,13 @@ namespace Johans_kalkylator
     {
 
         //Hej Github
-        int första;
-        int andra;
-        bool haskomma;
+        double första;
+        double andra;
+        bool haskomma = false;
+        string operation = "";
 
         public Form1()
         {
-            haskomma = false;
             InitializeComponent();
         }
 
@@ -32,50 +32,85 @@ namespace Johans_kalkylator
             Button knapp = (Button)sender;
 
 
-            if(knapp.Text == "*")
+            if (knapp.Text == "*")
             {
-                första = int.Parse(richTextBox1.Text);
-                richTextBox1.Text = "";
+                första = double.Parse(richTextBox1.Text);
+                richTextBox1.Clear();
+                operation = "*";
             }
             if (knapp.Text == "+")
             {
-                första = int.Parse(richTextBox1.Text);
-                richTextBox1.Text = "";
+                första = double.Parse(richTextBox1.Text);
+                richTextBox1.Clear();
+                operation = "+";
+               
             }
             if (knapp.Text == "-")
             {
-                första = int.Parse(richTextBox1.Text);
-                richTextBox1.Text = "";
+                första = double.Parse(richTextBox1.Text);
+                richTextBox1.Clear();
+                operation = "-";
             }
             if (knapp.Text == "/")
             {
-                första = int.Parse(richTextBox1.Text);
-                richTextBox1.Text = "";
+                första = double.Parse(richTextBox1.Text);
+                richTextBox1.Clear();
+                operation = "/";
             }
             if (knapp.Text == "=")
             {
-                andra = int.Parse(richTextBox1.Text);
-                richTextBox1.Text = (första + andra).ToString();
-            }
-            if (knapp.Text == ",")
-            {
-
-                char[] arr = richTextBox1.Text.ToCharArray();
-
-                for(int i = 0; i < arr.Length; i++)
+                andra = double.Parse(richTextBox1.Text);
+                if (operation == "+")
                 {
-                    if(arr[i] == '.')
-                    {
-                        haskomma = true;
-                    }
-
+                    richTextBox1.Text = (första + andra).ToString();
                 }
 
-                if(!haskomma)
-                    richTextBox1.Text += ".";
+                if (operation == "*")
+                {
+                    richTextBox1.Text = (första * andra).ToString();
+                }
+
+                if (operation == "-")
+                {
+                    richTextBox1.Text = (första - andra).ToString();
+                }
+
+                if (operation == "/")
+                {
+                    richTextBox1.Text = (första / andra).ToString();
+                }
+            }
+            if (knapp.Text == "CE")
+            {
+                
+                richTextBox1.Clear();
+                haskomma = false;
                 
             }
+            if (knapp.Text == "C")
+            {
+                första = 0;
+                andra = 0;
+                richTextBox1.Clear();
+                haskomma = false;
+            }
+
 
         }
+
+        private void Button_Komma(object sender, System.EventArgs e)
+        {
+            
+                if (haskomma == false)
+                {
+                    haskomma = true;
+                    richTextBox1.Text += ",";
+                }
+            
+
+        }
+
     }
+
 }
+
