@@ -1,5 +1,6 @@
-﻿namespace Johans_kalkylator
-{
+﻿namespace Johans_kalkylator    //Bygger upp kalkylatorn 
+{ 
+
     partial class Form1
     {
         /// <summary>
@@ -45,7 +46,6 @@
             this.button29 = new System.Windows.Forms.Button();
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button33 = new System.Windows.Forms.Button();
             this.button34 = new System.Windows.Forms.Button();
@@ -265,9 +265,9 @@
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button30.ForeColor = System.Drawing.SystemColors.Control;
-            this.button30.Location = new System.Drawing.Point(242, 244);
+            this.button30.Location = new System.Drawing.Point(242, 195);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(45, 92);
+            this.button30.Size = new System.Drawing.Size(45, 141);
             this.button30.TabIndex = 15;
             this.button30.Text = "=";
             this.button30.UseVisualStyleBackColor = false;
@@ -278,26 +278,13 @@
             this.button31.BackColor = System.Drawing.SystemColors.Desktop;
             this.button31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button31.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button31.Location = new System.Drawing.Point(242, 195);
+            this.button31.Location = new System.Drawing.Point(242, 146);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(45, 43);
             this.button31.TabIndex = 16;
             this.button31.Text = "√";
             this.button31.UseVisualStyleBackColor = false;
             this.button31.Click += new System.EventHandler(this.Button_SQRT);
-            // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.SystemColors.Desktop;
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button32.Location = new System.Drawing.Point(242, 146);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(45, 43);
-            this.button32.TabIndex = 17;
-            this.button32.Text = "^";
-            this.button32.UseVisualStyleBackColor = false;
-            this.button32.Click += new System.EventHandler(this.Button_uträkningar);
             // 
             // richTextBox1
             // 
@@ -387,7 +374,6 @@
             this.Controls.Add(this.button34);
             this.Controls.Add(this.button33);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button32);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button30);
             this.Controls.Add(this.button29);
@@ -431,7 +417,6 @@
         private System.Windows.Forms.Button button29;
         private System.Windows.Forms.Button button30;
         private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button32;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button33;
         private System.Windows.Forms.Button button34;
